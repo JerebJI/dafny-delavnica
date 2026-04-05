@@ -22,7 +22,7 @@
 //
 // Večvrstično komentiranje/dekomentiranje:
 //   1. izberi vrstice s kurzorjem
-//      (ni treba označiti v celoti, le da je kaj označeno na željenih vrstica).
+//      (ni treba označiti v celoti, le da je kaj označeno na željenih vrstica),
 //   2. ctrl-shift-7.
 // ------------------------------------------------------------------------------
 
