@@ -28,44 +28,50 @@
 			background: #ffde59;
 			border: black;
 			border-style: solid;
-			color: black;
+			color: black !important;
 			padding: 10px 30px;
-			margin: 40px;
-			font-size: var(--r-heading1-size);
-			box-shadow: 5px 5px 0px black;
+			margin: 10px;
+			font-size: 50px;
+			/* box-shadow: 5px 5px 0px black; */
 			font-family: 'CanvaSans-Regular';
 			border-radius: 12px;
 		}
-		.download-icon {
-			cursor: pointer;
-			border-style: solid !important;
+		.download {
 			background: #ffde59;
 			border: black;
-			transition: all 0.2s ease;
-			border-radius: 12px;
+			border-style: solid;
+			color: black !important;
+			padding: 10px 30px;
+			margin: 10px;
+			font-size: 50px;
+			font-family: 'CanvaSans-Regular';
+			border-radius: 10px;
 		}
-
-		.download-icon:hover {
-			background: #ffe26f;
-			box-shadow: 5px 5px 0 black;
+		.download:hover {
+			background: #f7d756;
+			border: black !important;
+			border-style: solid !important;
+			box-shadow: 2.5px 2.5px 0 black;
 		}
 		body {
 			font-family: 'CanvaSans-Regular';
 		}
 		.url {
-			margin: 80px 0 50px;
+			margin: 80px 0 80px;
 			color: black;
-			font-size: 55px;
+			font-size: 70px;
 		}
 	</style>
 	<body>
 		<div class="reveal">
 			<div class="slides" data-background-color="#f5f5f5">
 				<section>
-					<div class="banner">Dafny delavnica</div>
 					<div class="url">jerebji.github.io/dafny-delavnica</div>
-					<a href="media/delavnica.dfy" download>
-						<img class="download-icon" src="media/download-svgrepo-com.svg" width="20%" height="20%" alt="Download">
+					<a class="download" style="margin:auto;justify-content: center;" href="media/delavnica.dfy" download>
+						<img style="vertical-align:middle;transform: translate(-12%,-10%);"
+						     src="media/download-svgrepo-com.svg"
+							 width="7%" height="7%" alt="Download">
+						delavnica.dfy
 					</a>
 				</section>
 			</div>
