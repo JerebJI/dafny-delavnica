@@ -7,20 +7,74 @@
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		/>
 
-		<title>reveal.js</title>
+		<title>Dafny delavnica</title>
+		<link rel="icon" href="media/favicon.ico">
 
 		<link rel="stylesheet" href="dist/reset.css" />
 		<link rel="stylesheet" href="dist/reveal.css" />
-		<link rel="stylesheet" href="dist/theme/black.css" />
+		<link rel="stylesheet" href="dist/theme/white.css" />
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
 	</head>
+	<style>
+		@font-face {
+			font-family: 'CanvaSans-Regular';
+			src: url('/media/CanvaSans-Regular.otf') font("openType");
+			font-weight: normal;
+			font-style: normal;
+		}
+		.banner {
+			/* position: absolute;
+			top: 20px;
+			left: 50%; */
+			/* transform: translateX(-50%);s */
+			
+			background: #ffde59;
+			border: black;
+			border-style: solid;
+			color: black;
+			padding: 10px 30px;
+			margin: 30px;
+			font-size: var(--r-heading1-size);
+			/* font-weight: bold; */
+
+			/* Monochrome black shadow */
+			box-shadow: 5px 5px 0px black;
+
+			border-radius: 12px;
+		}
+		.download-icon {
+			cursor: pointer;
+			border-style: solid !important;
+			background: #ffde59;
+			border: black;
+			/* box-shadow: 3px 3px 0 black; */
+			transition: all 0.2s ease;
+			border-radius: 12px;
+		}
+
+		.download-icon:hover {
+			transform: translateY(-3px) scale(1.05);
+			background: #eaeaea;
+		}
+		body {
+			font-family: 'CanvaSans-Regular';
+		}
+	</style>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+			<div class="slides" data-background-color="#f5f5f5">
+				<section>
+					<div class="banner" style="font-family: 'CanvaSans-Regular';">Dafny delavnica</div>
+					<br>
+					<a style="margin: 100px 0; color: black !important;">jerebji.github.io/dafny-delavnica</a>
+					<br>
+					<br>
+					<a href="media/delavnica.dfy" download>
+						<img class="download-icon" src="media/download-svgrepo-com.svg" width="20%" height="20%" alt="Download">
+					</a>
+				</section>
 			</div>
 		</div>
 
