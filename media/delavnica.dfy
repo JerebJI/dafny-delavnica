@@ -13,18 +13,18 @@
 // Plonk: https://dafny.org/latest/Dafny-cheat-sheet.pdf
 // ------------------------------------------------------------------------
 
-// ------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
 //          UPORABNE BLIŽNJICE / POSTOPKI
-// ----------------------------------------------------------------------------
-// Dafny crkne:
-//   1. ctrl-shift-p restart dafny server
-//   2. skoči na drug zavihek pa nazaj ALI ctrl-shift-p reload window
+// ------------------------------------------------------------------------------
+// Dafny ne dela:
+//   1. ctrl-shift-p restart dafny server,
+//   2. skoči na drug zavihek pa nazaj ALI ctrl-shift-p reload window.
 //
 // Večvrstično komentiranje/dekomentiranje:
 //   1. izberi vrstice s kurzorjem
-//      (ni treba označiti v celoti le da je kaj označeno na željenih vrstica)
-//   2. ctrl-shift-7
-// ----------------------------------------------------------------------------
+//      (ni treba označiti v celoti, le da je kaj označeno na željenih vrstica).
+//   2. ctrl-shift-7.
+// ------------------------------------------------------------------------------
 
 // Primer: Fibbonacci
 function Fib(a:nat) : nat {
