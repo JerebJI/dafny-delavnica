@@ -291,6 +291,33 @@ lemma {:induction false} Mirror_mirror_is_id(tree : Tree)
 //   Naloge
 // ----------
 
+// -----------------------
+// Kako uporabiš trditev?
+// -----------------------
+// |  A && B   |    A || B    |   A => B     |
+// +-----------+--------------+--------------+
+// | assert A; | if A { ... } | if A {       |
+// | assert B; | if B { ... } |   asssert B; |
+// |           |              | }            |
+//
+// | exists x :: P |         forall x :: P             |
+// | var x :| P    | assert P[zamenjaj x za neko spr.] |
+
+// ----------------------
+// Kako dokažeš trditev?
+// ----------------------
+// |  A && B   |    A || B        |   A => B   |
+// +-----------+------------------+------------+
+// | dokaži A  | dokaži A (ali B) | if A {     |
+// | dokaži B  |                  |   dokaži B |
+// |           |                  | }          |
+//
+// |          exists x :: P            |         forall x :: P             |
+// +-----------------------------------+-----------------------------------+
+// | dokaži P[zamenjaj x za nek izraz] | forall x                          |
+// |                                   |   ensures P                       |
+// |                                   | { dokaži P }                      |
+
 // Naloga: dokaži veljavnost spodnje leme
 lemma Even1_pm_2_is_Even1(x:int)
   requires Even1(x)
