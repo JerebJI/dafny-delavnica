@@ -301,6 +301,7 @@ lemma {:induction false} Mirror_mirror_is_id(tree : Tree)
 // |           |              | }            |
 //
 // | exists x :: P |         forall x :: P             |
+// +---------------+-----------------------------------+
 // | var x :| P    | assert P[zamenjaj x za neko spr.] |
 
 // ----------------------
